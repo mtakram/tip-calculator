@@ -1,15 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet" />
     <title>Counter App</title>
 </head>
+
 <body>
     <div class="container">
-        
+        <div class="content">
+            <div class="input-group">
+                <label for="bill">Bill</label>
+                <input id="bill_amount" id="bill" type="number" />
+            </div>
+            <p>Select Tip %</p>
+            <div class="tip-percentage">
+                <button id="five_perc">5%</button>
+                <button id="ten_perc">10%</button>
+                <button id="fifteen_perc">15%</button>
+                <button id="twentyfive_perc">25%</button>
+                <button id="fifty_perc">50%</button>
+                <button id="custom">Custom</button>
+            </div>
+            <div class="input-group">
+                <label for="persons">Number of People</label>
+                <input id="total_persons" id="persons" type="number" />
+            </div>
+        </div>
+        <div class="result">
+            <p><span>Bill Amount</span> <span class="currency">$<span id="bill_amount">00.00</span></span></p>
+            <p><span>Tip Amount</span> <span class="currency">$<span id="tip_amount">00.00</span></span></p>
+            <p><span>Total Bill</span> <span class="currency">$<span id="total_bill">00.00</span></span></p>
+            <p>Per person share is <span class="currency">$</span> <span id="per_person_share">00.00</span></p>
+            <button>Reset</button>
+        </div>
     </div>
     <script src="js/scripts.js"></script>
 </body>
+
 </html>
