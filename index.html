@@ -11,12 +11,12 @@
 <body>
     <div class="container">
         <div class="content">
-            <div class="input-group">
+            <div class="input-group mb-12">
                 <label for="bill">Bill</label>
                 <input id="bill_amount" id="bill" type="number" />
             </div>
-            <p>Select Tip %</p>
-            <div class="tip-percentage">
+            <p class="mb-12">Select Tip %</p>
+            <div class="tip-percentage mb-12">
                 <button id="five_perc">5%</button>
                 <button id="ten_perc">10%</button>
                 <button id="fifteen_perc">15%</button>
@@ -30,11 +30,25 @@
             </div>
         </div>
         <div class="result">
-            <p><span>Bill Amount</span> <span class="currency">$<span id="bill_amount">00.00</span></span></p>
-            <p><span>Tip Amount</span> <span class="currency">$<span id="tip_amount">00.00</span></span></p>
-            <p><span>Total Bill</span> <span class="currency">$<span id="total_bill">00.00</span></span></p>
-            <p>Per person share is <span class="currency">$</span> <span id="per_person_share">00.00</span></p>
-            <button>Reset</button>
+            <table>
+                <tr>
+                    <td>Bill Amount</td>
+                    <td><span class="currency">$</span><span id="bill_amount">00.00</span></td>
+                </tr>
+                <tr>
+                    <td>Tip Amount</td>
+                    <td><span class="currency">$</span><span id="tip_amount">00.00</span></td>
+                </tr>
+                <tr>
+                    <td>Total Bill</td>
+                    <td><span class="currency">$</span><span id="total_bill">00.00</span></td>
+                </tr>
+                <tr>
+                    <td>Per person share</td>
+                    <td><span class="currency">$</span><span id="per_person_share">00.00</span></td>
+                </tr>
+            </table>
+            <button id="reset_btn">Reset</button>
         </div>
     </div>
     <script src="js/scripts.js"></script>
